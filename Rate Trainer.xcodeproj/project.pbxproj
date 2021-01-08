@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		5539673725A8EDE700AA979A /* Rate_TrainerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539673625A8EDE700AA979A /* Rate_TrainerApp.swift */; };
-		5539673925A8EDE700AA979A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539673825A8EDE700AA979A /* ContentView.swift */; };
+		5539673925A8EDE700AA979A /* RateTrainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539673825A8EDE700AA979A /* RateTrainerView.swift */; };
 		5539673B25A8EDE700AA979A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5539673A25A8EDE700AA979A /* Assets.xcassets */; };
 		5539673E25A8EDE700AA979A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5539673D25A8EDE700AA979A /* Preview Assets.xcassets */; };
 		5539674925A8EDE700AA979A /* Rate_TrainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539674825A8EDE700AA979A /* Rate_TrainerTests.swift */; };
 		5539675425A8EDE700AA979A /* Rate_TrainerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539675325A8EDE700AA979A /* Rate_TrainerUITests.swift */; };
+		5539676E25A8EE8800AA979A /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539676D25A8EE8800AA979A /* ColorExtension.swift */; };
+		5539677325A8EE9700AA979A /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539677225A8EE9700AA979A /* DoubleExtension.swift */; };
+		5539677825A8EF0900AA979A /* TempoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539677725A8EF0900AA979A /* TempoController.swift */; };
+		5539678025A8EF9D00AA979A /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539677F25A8EF9D00AA979A /* Buttons.swift */; };
+		5539678625A8F05000AA979A /* beep.aif in Resources */ = {isa = PBXBuildFile; fileRef = 5539678525A8F05000AA979A /* beep.aif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +40,7 @@
 /* Begin PBXFileReference section */
 		5539673325A8EDE700AA979A /* Rate Trainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rate Trainer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5539673625A8EDE700AA979A /* Rate_TrainerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate_TrainerApp.swift; sourceTree = "<group>"; };
-		5539673825A8EDE700AA979A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5539673825A8EDE700AA979A /* RateTrainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateTrainerView.swift; sourceTree = "<group>"; };
 		5539673A25A8EDE700AA979A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5539673D25A8EDE700AA979A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5539673F25A8EDE700AA979A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +50,11 @@
 		5539674F25A8EDE700AA979A /* Rate TrainerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rate TrainerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5539675325A8EDE700AA979A /* Rate_TrainerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate_TrainerUITests.swift; sourceTree = "<group>"; };
 		5539675525A8EDE700AA979A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5539676D25A8EE8800AA979A /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		5539677225A8EE9700AA979A /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		5539677725A8EF0900AA979A /* TempoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoController.swift; sourceTree = "<group>"; };
+		5539677F25A8EF9D00AA979A /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		5539678525A8F05000AA979A /* beep.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = beep.aif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				5539673625A8EDE700AA979A /* Rate_TrainerApp.swift */,
-				5539673825A8EDE700AA979A /* ContentView.swift */,
+				5539676B25A8EE4000AA979A /* Models */,
+				5539676725A8EE3700AA979A /* Views */,
+				5539676C25A8EE5B00AA979A /* Controllers */,
+				5539678425A8EFDD00AA979A /* Resources */,
 				5539673A25A8EDE700AA979A /* Assets.xcassets */,
 				5539673F25A8EDE700AA979A /* Info.plist */,
 				5539673C25A8EDE700AA979A /* Preview Content */,
@@ -128,6 +141,40 @@
 				5539675525A8EDE700AA979A /* Info.plist */,
 			);
 			path = "Rate TrainerUITests";
+			sourceTree = "<group>";
+		};
+		5539676725A8EE3700AA979A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5539673825A8EDE700AA979A /* RateTrainerView.swift */,
+				5539677F25A8EF9D00AA979A /* Buttons.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5539676B25A8EE4000AA979A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5539676D25A8EE8800AA979A /* ColorExtension.swift */,
+				5539677225A8EE9700AA979A /* DoubleExtension.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5539676C25A8EE5B00AA979A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5539677725A8EF0900AA979A /* TempoController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5539678425A8EFDD00AA979A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5539678525A8F05000AA979A /* beep.aif */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5539673E25A8EDE700AA979A /* Preview Assets.xcassets in Resources */,
+				5539678625A8F05000AA979A /* beep.aif in Resources */,
 				5539673B25A8EDE700AA979A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +307,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5539673925A8EDE700AA979A /* ContentView.swift in Sources */,
+				5539677325A8EE9700AA979A /* DoubleExtension.swift in Sources */,
+				5539676E25A8EE8800AA979A /* ColorExtension.swift in Sources */,
+				5539677825A8EF0900AA979A /* TempoController.swift in Sources */,
+				5539678025A8EF9D00AA979A /* Buttons.swift in Sources */,
+				5539673925A8EDE700AA979A /* RateTrainerView.swift in Sources */,
 				5539673725A8EDE700AA979A /* Rate_TrainerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
