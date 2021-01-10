@@ -11,7 +11,7 @@ import SwiftUI
 struct Rate_TrainerApp: App {
     var body: some Scene {
         WindowGroup {
-            RateTrainerView()
+            ContentView()
         }
     }
 }

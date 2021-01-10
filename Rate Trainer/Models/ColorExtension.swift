@@ -23,6 +23,10 @@ extension Color {
     static let flatGreenCAN = Color("FlatUIGreenCAN")
     static let flatGreenCANHL = Color("FlatUIGreenCANHL")
     
+    // Purple Hues
+    static let flatPurpleCAN = Color("FlatUIPurpleCAN")
+    static let flatPurpleCANHL = Color("FlatUIPurpleCANHL")
+    
     // Yellow Hues
     static let brandYellow = Color("BrandYellow")
     static let flatYellowCAN = Color("FlatUIYellowCAN")
