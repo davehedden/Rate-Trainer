@@ -24,7 +24,7 @@ struct RateTrainerView: View {
                 }) {
                     Image(systemName: "minus.circle.fill")
                         .font(.system(size: 28))
-                        .foregroundColor(.blue)
+                        .foregroundColor(.flatBlueCAN)
                 }
 
                 Slider(
@@ -52,7 +52,7 @@ struct RateTrainerView: View {
                 }) {
                     Image(systemName: "plus.circle.fill")
                         .font(.system(size: 28))
-                        .foregroundColor(.blue)
+                        .foregroundColor(.flatBlueCAN)
                 }
             }
             

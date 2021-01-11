@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		552643BA25AB82D200111284 /* TargetRateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552643B925AB82D200111284 /* TargetRateData.swift */; };
 		552643BF25AB8EB600111284 /* RatePickerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552643BE25AB8EB600111284 /* RatePickerData.swift */; };
+		552643D025ACDB6300111284 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552643CF25ACDB6300111284 /* Haptics.swift */; };
 		5539673725A8EDE700AA979A /* Rate_TrainerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539673625A8EDE700AA979A /* Rate_TrainerApp.swift */; };
 		5539673925A8EDE700AA979A /* RateTrainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539673825A8EDE700AA979A /* RateTrainerView.swift */; };
 		5539673B25A8EDE700AA979A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5539673A25A8EDE700AA979A /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		552643B925AB82D200111284 /* TargetRateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetRateData.swift; sourceTree = "<group>"; };
 		552643BE25AB8EB600111284 /* RatePickerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatePickerData.swift; sourceTree = "<group>"; };
+		552643CF25ACDB6300111284 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
 		5539673325A8EDE700AA979A /* Rate Trainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rate Trainer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5539673625A8EDE700AA979A /* Rate_TrainerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate_TrainerApp.swift; sourceTree = "<group>"; };
 		5539673825A8EDE700AA979A /* RateTrainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateTrainerView.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				5539678525A8F05000AA979A /* beep.aif */,
+				552643CF25ACDB6300111284 /* Haptics.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				55C35D8E25AB6C75009CBAB9 /* SettingsView.swift in Sources */,
 				5539678025A8EF9D00AA979A /* Buttons.swift in Sources */,
 				55C35D9925AB78EC009CBAB9 /* Constants.swift in Sources */,
+				552643D025ACDB6300111284 /* Haptics.swift in Sources */,
 				552643BF25AB8EB600111284 /* RatePickerData.swift in Sources */,
 				55C35D7E25AB67EE009CBAB9 /* ContentView.swift in Sources */,
 				5539673925A8EDE700AA979A /* RateTrainerView.swift in Sources */,
@@ -497,6 +501,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Rate Trainer/Rate Trainer.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Rate Trainer/Preview Content\"";
 				DEVELOPMENT_TEAM = 54R7945PDG;
 				ENABLE_PREVIEWS = YES;
@@ -521,6 +526,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Rate Trainer/Rate Trainer.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Rate Trainer/Preview Content\"";
 				DEVELOPMENT_TEAM = 54R7945PDG;
 				ENABLE_PREVIEWS = YES;

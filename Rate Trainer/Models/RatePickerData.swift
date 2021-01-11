@@ -13,7 +13,7 @@ struct RatePickerData {
 }
 
 var targetRates: [RatePickerData] = [
-    RatePickerData(title: "Choose Target Rate (Avg of Top 3):", rate: defaults.double(forKey: K.UserDefaultKeys.tempo)),
+    RatePickerData(title: "Olympic Trials Rates (Avg Top 3):", rate: defaults.double(forKey: K.UserDefaultKeys.tempo)),
     RatePickerData(title: TargetRateData.Free50.Men.title, rate: TargetRateData.Free50.Men.avgTop3),
     RatePickerData(title: TargetRateData.Free50.Women.title, rate: TargetRateData.Free50.Women.avgTop3),
     RatePickerData(title: TargetRateData.Free100.Men.title, rate: TargetRateData.Free100.Men.avgTop3),

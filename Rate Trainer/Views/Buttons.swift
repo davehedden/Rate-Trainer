@@ -146,40 +146,6 @@ struct DoubleTempoButton: View {
     }
 }
 
-//struct TapButton: View {
-//    @ObservedObject var tempoController: TempoController
-//
-//    var body: some View {
-//        Button(action: {
-//            tempoController.tapRate()
-//        }) {
-//            SmallButton(iconName: "metronome.fill", label: "TAP TEMPO")
-//        }
-//        .buttonStyle(SolidButtonStyle(buttonColor: .flatYellowCAN, buttonColorPressed: .flatYellowCANHL))
-//        .padding(.top, 60)
-//    }
-//}
-
-//struct TapButtonInactive: View {
-//    var body: some View {
-//        Button(action: {
-//
-//        }) {
-//            HStack {
-//                Image(systemName: "metronome.fill")
-//
-//                Text("TAP TEMPO")
-//                    .font(.headline)
-//                    .fontWeight(.heavy)
-//            }
-//            .frame(width: 160, height: 60)
-//            .foregroundColor(.flatGrayCAN)
-//        }
-//        .buttonStyle(SolidButtonStyle(buttonColor: .flatSilverCAN, buttonColorPressed: .flatSilverCAN))
-//        .padding(.top, 60)
-//    }
-//}
-
 struct RateButton: View {
     @ObservedObject var tempoController: TempoController
     
@@ -187,6 +153,7 @@ struct RateButton: View {
         Button(action: {
             defaults.setValue(tempoController.rateBase, forKey: K.UserDefaultKeys.rateBase)
             tempoController.tapRate()
+            hapticSuccess()
         }) {
             BigRateButton(iconName: "metronome.fill", label: "TAKE RATE", rateIconName: "\(Int(tempoController.rateBase)).circle.fill")
         }
@@ -209,35 +176,13 @@ struct RateButtonInactive: View {
     }
 }
 
-//struct RateButtonInactive: View {
-//    var body: some View {
-//        Button(action: {
-//
-//        }) {
-//            VStack {
-//                Image(systemName: "metronome.fill")
-//                    .resizable()
-//                    .aspectRatio(contentMode: .fit)
-//                    .frame(width: 40, height: 40)
-//
-//                Text("TAKE RATE")
-//                    .font(.headline)
-//                    .fontWeight(.heavy)
-//            }
-//            .frame(width: 160, height: 120)
-//            .foregroundColor(.flatGrayCAN)
-//        }
-//        .buttonStyle(SolidButtonStyle(buttonColor: .flatSilverCAN, buttonColorPressed: .flatSilverCAN))
-//        .padding(.top, 60)
-//    }
-//}
-
 struct StopButton: View {
     @ObservedObject var tempoController: TempoController
     
     var body: some View {
         Button(action: {
             tempoController.stopBeeps()
+            hapticSuccess()
         }) {
             BigButton(iconName: "stop.fill", label: "STOP BEEPS")
         }
@@ -252,6 +197,7 @@ struct PlayButton: View {
     var body: some View {
         Button(action: {
             tempoController.startBeeps()
+            hapticSuccess()
         }) {
             BigButton(iconName: "play.fill", label: "PLAY BEEPS")
         }
