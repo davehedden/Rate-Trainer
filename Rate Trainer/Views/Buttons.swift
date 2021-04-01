@@ -32,7 +32,7 @@ struct BigButton: View {
                 .shadow(color: .black, radius: 1, x: 1, y: 1.25)
             
             Text(label)
-                .font(.headline)
+                .font(.system(size: 18))
                 .fontWeight(.heavy)
                 .shadow(color: .black, radius: 1, x: 1, y: 1.25)
         }
@@ -57,11 +57,11 @@ struct BigRateButton: View {
             
             HStack {
                 Text(label)
-                    .font(.headline)
+                    .font(.system(size: 18))
                     .fontWeight(.heavy)
                     .shadow(color: .black, radius: 1, x: 1, y: 1.25)
                 Image(systemName: rateIconName)
-                    .font(Font.system(.headline).bold())
+                    .font(Font.system(size: 20).bold())
                     .shadow(color: .black, radius: 1, x: 1, y: 1.25)
             }
         }
@@ -85,10 +85,10 @@ struct BigRateButtonInactive: View {
             
             HStack {
                 Text(label)
-                    .font(.headline)
+                    .font(.system(size: 18))
                     .fontWeight(.heavy)
                 Image(systemName: rateIconName)
-                    .font(Font.system(.headline).bold())
+                    .font(Font.system(size: 20).bold())
             }
         }
         .frame(width: 160, height: 120)
@@ -104,11 +104,12 @@ struct SmallButton: View {
     var body: some View {
         HStack(spacing: 5) {
             Image(systemName: iconName)
+                .font(.system(size: 20))
                 .shadow(color: .black, radius: 1, x: 1, y: 1.25)
                 .padding(.all, 0)
             
             Text(label)
-                .font(.headline)
+                .font(.system(size: 18))
                 .fontWeight(.heavy)
                 .shadow(color: .black, radius: 1, x: 1, y: 1.25)
                 .padding(.all, 0)
