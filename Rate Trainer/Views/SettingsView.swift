@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @Environment(\.presentationMode) var presentationMode
     @ObservedObject var tempoController: TempoController
+    @State var showInstructions = false
     
     var body: some View {
         Form {
@@ -20,7 +22,7 @@ struct SettingsView: View {
                     Spacer()
                 }) {
                 HStack {
-                    Text("Rate Base")
+                    Text("Cycles to Count")
                         .multilineTextAlignment(.leading)
                     Spacer()
                     
@@ -54,6 +56,18 @@ struct SettingsView: View {
 //                        Text("Make a Donation")
 //                    }
 //                }
+                Button(action: {
+                    showInstructions.toggle()
+                }) {
+                    HStack {
+                        Image(systemName: "info.circle")
+                            .font(.system(size: 28))
+                        Text("View Instructions")
+                    }
+                }
+                .sheet(isPresented: $showInstructions, content: {
+                    InstructionsView()
+                })
                 Link(destination: URL(string: "mailto:wavmaker11@gmail.com")!) {
                     HStack {
                         Image(systemName: "envelope.circle")

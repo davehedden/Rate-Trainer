@@ -21,6 +21,7 @@
 		5539677825A8EF0900AA979A /* TempoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539677725A8EF0900AA979A /* TempoController.swift */; };
 		5539678025A8EF9D00AA979A /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539677F25A8EF9D00AA979A /* Buttons.swift */; };
 		5539678625A8F05000AA979A /* beep.aif in Resources */ = {isa = PBXBuildFile; fileRef = 5539678525A8F05000AA979A /* beep.aif */; };
+		55911E62261787B60056BC4C /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55911E61261787B60056BC4C /* InstructionsView.swift */; };
 		55C35D7E25AB67EE009CBAB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C35D7D25AB67EE009CBAB9 /* ContentView.swift */; };
 		55C35D8925AB6C5D009CBAB9 /* RateRangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C35D8825AB6C5D009CBAB9 /* RateRangeView.swift */; };
 		55C35D8E25AB6C75009CBAB9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C35D8D25AB6C75009CBAB9 /* SettingsView.swift */; };
@@ -65,6 +66,7 @@
 		5539677725A8EF0900AA979A /* TempoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoController.swift; sourceTree = "<group>"; };
 		5539677F25A8EF9D00AA979A /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		5539678525A8F05000AA979A /* beep.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = beep.aif; sourceTree = "<group>"; };
+		55911E61261787B60056BC4C /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
 		55C35D6C25A90302009CBAB9 /* Rate Trainer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Rate Trainer.entitlements"; sourceTree = "<group>"; };
 		55C35D7D25AB67EE009CBAB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		55C35D8825AB6C5D009CBAB9 /* RateRangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateRangeView.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				55C35D8825AB6C5D009CBAB9 /* RateRangeView.swift */,
 				55C35D8D25AB6C75009CBAB9 /* SettingsView.swift */,
 				5539677F25A8EF9D00AA979A /* Buttons.swift */,
+				55911E61261787B60056BC4C /* InstructionsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				552643BF25AB8EB600111284 /* RatePickerData.swift in Sources */,
 				55C35D7E25AB67EE009CBAB9 /* ContentView.swift in Sources */,
 				5539673925A8EDE700AA979A /* RateTrainerView.swift in Sources */,
+				55911E62261787B60056BC4C /* InstructionsView.swift in Sources */,
 				5539673725A8EDE700AA979A /* Rate_TrainerApp.swift in Sources */,
 				55C35D8925AB6C5D009CBAB9 /* RateRangeView.swift in Sources */,
 			);
